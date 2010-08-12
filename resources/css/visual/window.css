@@ -38,11 +38,6 @@
 	background-image: url(../../images/window/right-corners.png);
 }
 
-.x-window-mc {
-    border-color:#99bbe8;
-    font: normal 11px tahoma,arial,helvetica,sans-serif;
-    background-color:#dfe8f6;
-}
 
 .x-window-ml {
 	background-image: url(../../images/window/left-right.png);
@@ -51,6 +46,22 @@
 .x-window-mr {
 	background-image: url(../../images/window/left-right.png);
 }
+
+
+
+.x-window-ml {
+	background-image: url(../../images/window/left-right.png);
+}
+
+.x-window-mr {
+	background-image: url(../../images/window/left-right.png);
+}
+.x-window-mc {
+    border-color:#99bbe8;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:#dfe8f6;
+}
+
 
 .x-window-maximized .x-window-tc {
     background-color:#fff;

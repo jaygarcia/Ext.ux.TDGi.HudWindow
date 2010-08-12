@@ -4,41 +4,124 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <title>Ext JS 3.0 Introduction</title>
 <link rel="stylesheet" type="text/css" href="/ext3/resources/css/ext-all.css" />
-<link rel="stylesheet" type="text/css" href="resources/css/structure/window.css" />
-<link rel="stylesheet" type="text/css" href="resources/css/visual/window.css" />
 <script type="text/javascript" src="/ext3/adapter/ext/ext-base.js"></script>
 <script type="text/javascript" src="/ext3/ext-all-debug.js"></script>
 <script type="text/javascript" src="js/Ext.ux.TDGi.HudWindow.js"></script>
 
 <style type="text/css">
+     /**
+     TODO : Pull into new CSS file
+    **/
+    
+    .hw .x-window-tl .x-window-header {
+        color: #666666;
+        font:bold 11px tahoma,arial,verdana,sans-serif;
+    }
 
+    .hw .x-window-tc {
+        background-image: url(resources/images/window/top-bottom.png);
+    }
+
+    .hw .x-window-tl {
+        background-image: url(resources/images/window/left-corners.png);
+        border-bottom-color: #2e2e2e;
+        border-bottom: 0px;
+    }
+
+    .hw .x-window-tr {
+        background-image: url(resources/images/window/right-corners.png);
+    }
+
+    .hw .x-window-bc {
+        background-image: url(resources/images/window/top-bottom.png);
+    }
+
+    .hw .x-window-bl {
+        background-image: url(resources/images/window/left-corners.png);
+    }
+    
+    .hw .x-window-br {
+        background-image: url(resources/images/window/right-corners.png);
+    }
+
+
+    .hw .x-window-ml {
+        background-image: url(resources/images/window/left-right.png);
+    }
+
+    .hw .x-window-mr {
+        background-image: url(resources/images/window/left-right.png);
+    }
+
+    .hw ul {
+        background-color: #2e2e2e !important;
+        border-color: #888888 !important;
+    }
+
+    .hw .x-panel-ghost {
+        border-color:#2e2e2e;
+        background-color: #2e2e2e;
+
+    }
+
+
+    .hw .x-window-ml {
+        background-image: url(resources/images/window/left-right.png);
+    }
     /* Tools */
     .hw-tool {
         float:left !important;
         margin-left: 0px;
-        margin-right : 2px;
+        margin-right: 2px;
     }
 
     .hw-mc {
-        border-color: #666666;
+        border-color: #2e2e2e;
         font: normal 11px tahoma,arial,helvetica,sans-serif;
-        background-color: #999999;
+        background-color: #2e2e2e;
+        color: #FFF;
     }
 
     .hw-header-text {
         color: #FEFEFE;
+        font-weight: normal !important;
+    }
+
+
+    .hw-tool {
+        background-image:url(resources/images/window/tool-sprites.png); /* will look like poo in IE */
+    }
+
+    .hw-bwrap {
+        -moz-opacity: 0.6;
+        opacity:.60;
+        filter: alpha(opacity=50);
+    }
+
+    .hw-tl {
+        -moz-opacity: 0.5;
+        opacity:.50;
+        filter: alpha(opacity=50);
     }
 
 </style>
 
 <script type="text/javascript">
 Ext.onReady(function() {
+    var tpl = new Ext.Template(
+        '<img src="{imgSrc}" style="width: "/>'        
+
+    );
+
     var w = new Ext.ux.TDGi.HudWindow({
         height : 300,
-        width  : 300,
-        title  : 'some title text'
+        width  : 500,
+        title  : 'some title text',
+        layout : 'fit',
+        html   : 'Some Message'
     }).show();
 
+    
 });
 
 

@@ -2,130 +2,37 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title>Ext JS 3.0 Introduction</title>
+<title>Ext.ux.TDGi.HudWindow example</title>
 <link rel="stylesheet" type="text/css" href="/ext3/resources/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/Ext.ux.TDGi.HudWindow.css" />
+
 <script type="text/javascript" src="/ext3/adapter/ext/ext-base.js"></script>
 <script type="text/javascript" src="/ext3/ext-all-debug.js"></script>
-<script type="text/javascript" src="js/Ext.ux.TDGi.HudWindow.js"></script>
-
-<style type="text/css">
-     /**
-     TODO : Pull into new CSS file
-    **/
-    
-    .hw .x-window-tl .x-window-header {
-        color: #666666;
-        font:bold 11px tahoma,arial,verdana,sans-serif;
-    }
-
-    .hw .x-window-tc {
-        background-image: url(resources/images/window/top-bottom.png);
-    }
-
-    .hw .x-window-tl {
-        background-image: url(resources/images/window/left-corners.png);
-        border-bottom-color: #2e2e2e;
-        border-bottom: 0px;
-    }
-
-    .hw .x-window-tr {
-        background-image: url(resources/images/window/right-corners.png);
-    }
-
-    .hw .x-window-bc {
-        background-image: url(resources/images/window/top-bottom.png);
-    }
-
-    .hw .x-window-bl {
-        background-image: url(resources/images/window/left-corners.png);
-    }
-    
-    .hw .x-window-br {
-        background-image: url(resources/images/window/right-corners.png);
-    }
-
-
-    .hw .x-window-ml {
-        background-image: url(resources/images/window/left-right.png);
-    }
-
-    .hw .x-window-mr {
-        background-image: url(resources/images/window/left-right.png);
-    }
-
-    .hw ul {
-        background-color: #2e2e2e !important;
-        border-color: #888888 !important;
-    }
-
-    .hw .x-panel-ghost {
-        border-color:#2e2e2e;
-        background-color: #2e2e2e;
-
-    }
-
-
-    .hw .x-window-ml {
-        background-image: url(resources/images/window/left-right.png);
-    }
-    /* Tools */
-    .hw-tool {
-        float:left !important;
-        margin-left: 0px;
-        margin-right: 2px;
-    }
-
-    .hw-mc {
-        border-color: #2e2e2e;
-        font: normal 11px tahoma,arial,helvetica,sans-serif;
-        background-color: #2e2e2e;
-        color: #FFF;
-    }
-
-    .hw-header-text {
-        color: #FEFEFE;
-        font-weight: normal !important;
-    }
-
-
-    .hw-tool {
-        background-image:url(resources/images/window/tool-sprites.png); /* will look like poo in IE */
-    }
-
-    .hw-bwrap {
-        -moz-opacity: 0.6;
-        opacity:.60;
-        filter: alpha(opacity=50);
-    }
-
-    .hw-tl {
-        -moz-opacity: 0.5;
-        opacity:.50;
-        filter: alpha(opacity=50);
-    }
-
-</style>
+<script type="text/javascript" src="resources/js/Ext.ux.TDGi.HudWindow.js"></script>
 
 <script type="text/javascript">
 Ext.onReady(function() {
     var tpl = new Ext.Template(
-        '<img src="{imgSrc}" style="width: "/>'        
+        '<img src="{imgSrc}" style="margin : 20px;float: left;"/>',
+        '<div style="margin: 10px 10px 0 0; width: 200px; display:inline;">',
+            '<div style="font-size: 20px;">dottie</div>',
+            '<div style="font-size: 13px; margin-top: 10px;">Folder</div>',
+            '<div style="font-size: 13px; margin-top: 10px;">152KB - 3 Items</div>',
+            '<div style="font-size: 13px; margin-top: 10px;">Last Modified October 22, 2010 09:05:55 AM</div>',
+        '</div>'
 
     );
 
-    var w = new Ext.ux.TDGi.HudWindow({
+    new Ext.ux.TDGi.HudWindow({
         height : 300,
-        width  : 500,
-        title  : 'some title text',
+        width  : 525,
+        title  : 'dottie',
         layout : 'fit',
-        html   : 'Some Message'
+        html   : tpl.apply({
+            imgSrc : 'resources/images/blue_folder.png'
+        })
     }).show();
-
-    
 });
-
-
-
 </script>
 
 </head>

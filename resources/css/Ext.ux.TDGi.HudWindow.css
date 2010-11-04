@@ -1,0 +1,93 @@
+ /**
+ * CSS for @class Ext.ux.TDGi.HudWindow
+ */
+.hw .x-window-tl .x-window-header {
+    color: #666666;
+    font:bold 11px tahoma,arial,verdana,sans-serif;
+}
+
+.hw .x-window-tc {
+    background-image: url(../images/hudwindow/top-bottom.png);
+}
+
+.hw .x-window-tl {
+    background-image: url(../images/hudwindow/left-corners.png);
+    border-bottom-color: #2e2e2e;
+    border-bottom: 0;
+}
+
+.hw .x-window-tr {
+    background-image: url(../images/hudwindow/right-corners.png);
+}
+
+.hw .x-window-bc {
+    background-image: url(../images/hudwindow/top-bottom.png);
+}
+
+.hw .x-window-bl {
+    background-image: url(../images/hudwindow/left-corners.png);
+}
+
+.hw .x-window-br {
+    background-image: url(../images/hudwindow/right-corners.png);
+}
+
+
+.hw .x-window-ml {
+    background-image: url(../images/hudwindow/left-right.png);
+}
+
+.hw .x-window-mr {
+    background-image: url(../images/hudwindow/left-right.png);
+}
+
+.hw ul {
+    background-color: #2e2e2e !important;
+    border-color: #888888 !important;
+}
+
+.hw .x-panel-ghost {
+    border-color:#2e2e2e;
+    background-color: #2e2e2e;
+
+}
+
+
+.hw .x-window-ml {
+    background-image: url(../images/hudwindow/left-right.png);
+}
+/* Tools */
+.hw-tool {
+    float:left !important;
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+.hw-mc {
+    border-color: #2e2e2e;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color: #2e2e2e;
+    color: #FFF;
+}
+
+.hw-header-text {
+    color: #FEFEFE;
+    font-weight: normal !important;
+}
+
+
+.hw-tool {
+    background-image:url(../images/hudwindow/tool-sprites.png); /* will look like poo in IE */
+}
+
+.hw-bwrap {
+    -moz-opacity: 0.6;
+    opacity:.60;
+    filter: alpha(opacity=50);
+}
+
+.hw-tl {
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+}
